@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.css" integrity="sha512-/bZeHtNhCNHsuODhywlz53PIfvrJbAmm7MUXWle/f8ro40mVNkPLz0I5VdiYyV030zepbBdMIty0Z3PRwjnfmg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="bagc.css">
+    
+</head>
+<body>
+
+   <section id="header">
+        <a href="proj1.html" id="logo">Buy <span>&</span> Flex'</a>
+        <div>
+            <ul id="navbar">
+                <li><a href="proj1.html">Home</a></li>
+                <li><a class="active" href="Shop Page.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <div class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button onclick="performSearch()">
+                                <span class="mdi mdi-magnify third"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li><i class="mdi mdi-cart first" onclick="toggleCartSidebar()"><span id="cart-count">0</span></i></li>
+                <li>
+                    <input type="checkbox" id="toggle-dropdown">
+                    <a href="login.html"><label id="loginser" class="mdi mdi-account second" tabindex="0">
+                    </label></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Category">
+        <div>
+            <h1><a href="Shop Page.html">Featured</a></h1>
+            <h1><a href="commercial.html">Commercial</a></h1>
+            <h1><a class="active" href="residential.html">Residential</a></h1>
+            <h1><a href="fitness.html">Household</a></h1>
+        </div>
+    </section>
+    <section id="eq1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro" data-name="Weight Bench" data-price="7000" data-img="pic/weightbench.webp" data-stars="5">
+                <img src="pic/weightbench.webp">
+                <div class="des">
+                    <span>Weight Bench</span>
+                    <div class="star">
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                    </div>
+                    <h2>P7,000</h2>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="pro" data-name="Stationary" data-price="9000" data-img="pic/stationary.jpg" data-stars="5">
+                <img src="pic/stationary.jpg">
+                <div class="des">
+                    <span>Stationary</span>
+                    <div class="star">
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                    </div>
+                    <h2>P9,000</h2>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="pro" data-name="Rowing Machine" data-price="3000" data-img="pic/row.jpg" data-stars="5">
+                <img src="pic/row.jpg">
+                <div class="des">
+                    <span>Rowing Machine</span>
+                    <div class="star">
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                    </div>
+                    <h2>P3,000</h2>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="pro" data-name="Smith Machine" data-price="5000" data-img="pic/smith.jpg" data-stars="5">
+                <img src="pic/smith.jpg">
+                <div class="des">
+                    <span>Smith Machine</span>
+                    <div class="star">
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                    </div>
+                    <h2>P5,000</h2>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="pro" data-name="Bench Press" data-price="500.00" data-img="pic/chest.jpg" data-stars="5">
+                <img src="pic/chest.jpg">
+                <div class="des">
+                    <span>Bench Press</span>
+                    <h5>Brand new Available all Sets</h5>
+                    <div class="star">
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                    </div>
+                    <h2>P500</h2>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="popover-overlay" id="popover-overlay">
+        <div class="popover" id="popover">
+            <button class="close-btn" onclick="hidePopover()">×</button>
+            <h2 id="popover-title"></h2>
+            <img class="popover-img" id="popover-img" src="" alt="Item Image">
+            <div class="star" id="popover-stars"></div>
+            <p id="popover-description"></p>
+            <select id="weight-select" onchange="updatePrice()">
+                <option value="5" data-price="0">5kg</option>
+                <option value="10" data-price="100">10kg</option>
+                <option value="15" data-price="200">15kg</option>
+                <option value="20" data-price="300">20kg</option>
+            </select>
+            <p id="popover-price"></p>
+            <button class="add-to-cart-btn" onclick="addToCartFromPopover()">Add to Cart</button>
+        </div>
+    </div>
+
+    <div id="cart-sidebar">
+        <h1 id="usersname" class="namers"></h1>
+        <h2>Shopping Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">Total: P<span id="cart-total">0.00</span></div>
+        <div class="cart-buttons">
+            <button class="close-btn" onclick="toggleCartSidebar()">Close</button>
+            <button onclick="clearCart()">Clear</button>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="popover.js"></script>
+</body>
+</html>

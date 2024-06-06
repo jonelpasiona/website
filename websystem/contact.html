@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.css" integrity="sha512-/bZeHtNhCNHsuODhywlz53PIfvrJbAmm7MUXWle/f8ro40mVNkPLz0I5VdiYyV030zepbBdMIty0Z3PRwjnfmg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="design.css">
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            
+            // Perform any necessary form validation here
+            
+            // Show an alert indicating that the message has been submitted
+            alert("Your message has been submitted!");
+            
+            // Optionally, you can reset the form fields after submission
+            document.querySelector(".contact-form").reset();
+        }
+    </script>
+</head>
+<body>
+    <section id="header">
+        <a href="proj1.html" id="logo">Buy <span>&</span> Flex'</a>
+      <div> 
+      <ul id="navbar">
+      <li><a href="proj1.html">Home</a></li>
+      <li><a  href="Shop Page.html">Shop</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+       <li><a href="about.html">About</a></li>
+      <li><div class="search-container">
+         <div class="search-box">
+             <input type="text" id="searchInput" placeholder="Search...">
+             <button onclick="performSearch()">
+                 <span class="mdi mdi-magnify third"></span>
+             </button>
+         </div>
+         </div>
+     </li>
+      <li><span class="mdi mdi-cart first"></span></li>
+      <li><span class="mdi mdi-account second"></span></li>
+      </div>
+   </section>
+
+   <div class="container">
+       
+        <h2>Questions & Feedback</h2>
+        <form class="contact-form" onsubmit="submitForm(event)">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+   
+</body>
+</html>

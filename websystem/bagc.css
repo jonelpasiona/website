@@ -1,0 +1,119 @@
+.popover-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.popover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.popover h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+.popover p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.popover .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #999;
+    cursor: pointer;
+}
+.pro {
+    position: relative;
+    cursor: pointer;
+}
+.popover-img {
+    width: 200px;
+    margin: 0 auto; /* Center the image */
+    display: block;
+    margin-bottom: 20px;
+}
+.star {
+    color: #FFD700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.add-to-cart-btn {
+    background-color: #fb0505;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Sidebar cart styles */
+#cart-sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    z-index: 1001;
+    padding: 20px;
+    overflow-y: auto;
+}
+#cart-sidebar h2 {
+    margin-top: 0;
+}
+#cart-sidebar .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#cart-sidebar .cart-item span {
+    display: block;
+}
+#cart-sidebar .cart-total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#cart-sidebar .cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#cart-sidebar .cart-buttons button {
+    background-color: #fb0505;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#cart-sidebar .cart-buttons button.close-btn {
+    background-color: gray;
+}
+
+#cart-sidebar .namers {
+    color: black;
+    font-weight: bolder;
+}

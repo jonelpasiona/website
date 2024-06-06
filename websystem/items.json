@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":" Barbell",
+        "price": 200,
+        "image": "pic/barbell.webp"
+    },
+    {
+        "id": 2,
+        "name":" Kettlebell",
+        "price": 250,
+        "image": "pic/kettlebell.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Dumb Bell",
+        "price": 290,
+        "image": "pic/dumbbell.webp"
+    },
+    {
+        "id": 4,
+        "name":" Chest",
+        "price": 200,
+        "image": "pic/chest.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Cable",
+        "price": 300,
+        "image": "pic/cable.jpg"
+    },
+    {
+        "id": 6,
+        "name":" Set Equipments",
+        "price": 200,
+        "image": "pic/set.jpg"
+    },
+    {
+        "id": 7,
+        "name":" Weights",
+        "price": 200,
+        "image": "pic/weights.webp"
+    },
+    {
+        "id": 8,
+        "name":" Treadmill",
+        "price": 200,
+        "image": "pic/treadmill.jpg"
+    }
+
+]
